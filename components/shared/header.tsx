@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import React from "react";
-import { Container } from "../shared";
+import { Container, SearchInput } from "../shared";
 import Image from "next/image";
 import { Button } from "../ui";
 import { ArrowRight, ShoppingCart, User } from "lucide-react";
@@ -19,6 +19,11 @@ export const Header: React.FC<Props> = ({ className }) => {
             <p className="text-sm text-gray-400 leading-3">вкуснее некуда</p>
           </div>
         </div>
+
+        <div className="mx-10 flex-1">
+          <SearchInput />
+        </div>
+
         <div className="flex items-center gap-3">
           <Button variant="outline" className="flex items-center gap-1">
             <User size={16} />
